@@ -1,0 +1,11 @@
+[gd_resource type="Resource" load_steps=3 format=3 uid="uid://qm6c5uivpkw8"]
+
+[ext_resource type="Script" uid="uid://bppt4dwgyumuv" path="res://BaseEnemy.gd" id="1_dooor"]
+[ext_resource type="Texture2D" uid="uid://ckrsk0jcombmw" path="res://Puppty.png" id="2_wtt5x"]
+
+[resource]
+script = ExtResource("1_dooor")
+name = "Pupty"
+texture = ExtResource("2_wtt5x")
+health = 200
+damage = 4

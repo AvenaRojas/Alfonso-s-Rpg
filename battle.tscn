@@ -1,0 +1,698 @@
+[gd_scene load_steps=75 format=3 uid="uid://c0mby6s5pq87d"]
+
+[ext_resource type="Script" uid="uid://d0h22kmnusgj1" path="res://battle.gd" id="1_i431l"]
+[ext_resource type="Resource" uid="uid://qm6c5uivpkw8" path="res://Pupty.tres" id="2_6t8i5"]
+[ext_resource type="Texture2D" uid="uid://ckrsk0jcombmw" path="res://Puppty.png" id="2_7sfm4"]
+[ext_resource type="FontFile" uid="uid://b23a2pokqrqij" path="res://Minecraftia-Regular.ttf" id="2_i431l"]
+[ext_resource type="Texture2D" uid="uid://wnpkcvgy2imi" path="res://j0fsfdma0kx61.png" id="3_xtuie"]
+[ext_resource type="Texture2D" uid="uid://c3ktno8u0rogf" path="res://Idleframe01.png" id="6_b1i6x"]
+[ext_resource type="Texture2D" uid="uid://bdpxwft8dlbm8" path="res://Idleframe02.png" id="7_sl0w2"]
+[ext_resource type="Texture2D" uid="uid://dq7wkbf3qdf38" path="res://Idleframe03.png" id="8_elvfr"]
+[ext_resource type="Texture2D" uid="uid://xb88ef61fekx" path="res://Idleframe04.png" id="9_4s0ev"]
+[ext_resource type="Texture2D" uid="uid://bslr3svfbcqso" path="res://Idleframe05.png" id="10_pihy1"]
+[ext_resource type="Texture2D" uid="uid://cjvy01cjc0dpo" path="res://Idleframe06.png" id="11_slotg"]
+[ext_resource type="Texture2D" uid="uid://dg5fxj8q6e8pj" path="res://pupty_hurt01.png" id="12_aacmo"]
+[ext_resource type="Texture2D" uid="uid://b5jhcemrhule2" path="res://pupty_hurt02.png" id="13_rggsl"]
+[ext_resource type="Texture2D" uid="uid://dwtheituwlfdo" path="res://pupty_hurt03.png" id="14_fljlq"]
+[ext_resource type="Texture2D" uid="uid://lo08lql764t5" path="res://pupty_hurt04.png" id="15_s5g7e"]
+[ext_resource type="Texture2D" uid="uid://urxjk3vwmjpg" path="res://pupty_hurt05.png" id="16_j128n"]
+[ext_resource type="Texture2D" uid="uid://b8ypj0jtq01lo" path="res://pupty_hurt06.png" id="17_nt5qs"]
+[ext_resource type="Texture2D" uid="uid://bdeeukbrtrdfi" path="res://pupty_hurt07.png" id="18_v7t3w"]
+[ext_resource type="Texture2D" uid="uid://dowgeghcbv0h3" path="res://pupty_hurt08.png" id="19_in21c"]
+[ext_resource type="Texture2D" uid="uid://2k8y20muxs2b" path="res://pupty_hurt09.png" id="20_uwl2g"]
+[ext_resource type="Texture2D" uid="uid://beb2hmiy2cuu8" path="res://alfonso_attacks01.png" id="22_uwl2g"]
+[ext_resource type="Texture2D" uid="uid://wojfqwl0ody5" path="res://alfonso_attacks02.png" id="23_5kmqj"]
+[ext_resource type="Texture2D" uid="uid://cdtixiufgeqio" path="res://alfonso_attacks03.png" id="24_lfmjp"]
+[ext_resource type="Texture2D" uid="uid://bcuxiheiey0pc" path="res://alfonso_attacks04.png" id="25_uefs0"]
+[ext_resource type="Texture2D" uid="uid://hxpnqm5t3fmu" path="res://alfonso_attacks05.png" id="26_6ke21"]
+[ext_resource type="Texture2D" uid="uid://cdt38fwlvfmrh" path="res://alfonso_attacks06.png" id="27_2sop1"]
+[ext_resource type="Texture2D" uid="uid://bov4b2gstmrj8" path="res://alfonso_idle01.png" id="28_uefs0"]
+[ext_resource type="Texture2D" uid="uid://dgqqovbrxygwb" path="res://alfonso_idle02.png" id="29_6ke21"]
+[ext_resource type="Texture2D" uid="uid://cium2ulrpdo50" path="res://alfonso_idle03.png" id="30_2sop1"]
+[ext_resource type="Texture2D" uid="uid://buf0uhuls1bg8" path="res://pupty_attacks01.png" id="31_2n6th"]
+[ext_resource type="Texture2D" uid="uid://cev12tfedgkth" path="res://alfonso_idle04.png" id="31_dnb8m"]
+[ext_resource type="Texture2D" uid="uid://carga7xaa2nm5" path="res://pupty_attacks02.png" id="32_bqoqy"]
+[ext_resource type="Texture2D" uid="uid://cbhyro2qqqcen" path="res://pupty_attacks03.png" id="33_ptuo3"]
+[ext_resource type="Texture2D" uid="uid://bdqmua36r28wl" path="res://pupty_attacks04.png" id="34_mrqp6"]
+[ext_resource type="Texture2D" uid="uid://doa0cfseadh1u" path="res://pupty_attacks05.png" id="35_goa8d"]
+[ext_resource type="Texture2D" uid="uid://ct8l44boqa41u" path="res://pupty_attacks06.png" id="36_vpc78"]
+[ext_resource type="Texture2D" uid="uid://dsvbvy75lf8yi" path="res://alfonso_hurt01.png" id="37_xtuie"]
+[ext_resource type="Texture2D" uid="uid://dais6co3j076r" path="res://alfonso_hurt02.png" id="38_agd6b"]
+[ext_resource type="Texture2D" uid="uid://cxiestc7mvi8f" path="res://alfonso_hurt03.png" id="39_fahm1"]
+[ext_resource type="Texture2D" uid="uid://b1xaqmlr2o8ro" path="res://alfonso_hurt04.png" id="40_t6r5o"]
+[ext_resource type="Texture2D" uid="uid://dkgk33xyvwf1f" path="res://alfonso_hurt05.png" id="41_ukj8r"]
+[ext_resource type="Texture2D" uid="uid://y3p6poc4gtn8" path="res://alfonso_hurt06.png" id="42_6re1f"]
+[ext_resource type="Texture2D" uid="uid://bhtatdoiq1u4q" path="res://alfonso_hurt07.png" id="43_qps0a"]
+[ext_resource type="Texture2D" uid="uid://c2la6i01bboal" path="res://alfonso_hurt08.png" id="44_pegyb"]
+[ext_resource type="Texture2D" uid="uid://vyq8ir5ykesl" path="res://alfonso_hurt09.png" id="45_4p2ti"]
+[ext_resource type="Texture2D" uid="uid://bn0uej70by24m" path="res://alfonso_hurt10.png" id="46_5yi6v"]
+[ext_resource type="AudioStream" uid="uid://dr62y3d2v146q" path="res://sonic-land-sound.ogg" id="47_agd6b"]
+[ext_resource type="AudioStream" uid="uid://dllgprwsmeulf" path="res://sonic-lock-on.ogg" id="48_fahm1"]
+[ext_resource type="AudioStream" uid="uid://prodlxpk34ja" path="res://sonic-boss-hit.ogg" id="49_t6r5o"]
+[ext_resource type="AudioStream" uid="uid://dvii2leahadjm" path="res://Alfonso2.wav" id="50_ukj8r"]
+[ext_resource type="AudioStream" uid="uid://djxdqwn3phb5w" path="res://snd_text (mp3cut.net) (1).wav" id="51_6re1f"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6t8i5"]
+bg_color = Color(0.773571, 0, 0.326373, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_dw4jg"]
+bg_color = Color(5.39064e-06, 0.99116, 0.495281, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_7sfm4"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 7
+border_width_top = 7
+border_width_right = 7
+border_width_bottom = 7
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_6re1f"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4p2ti"]
+bg_color = Color(0.129558, 0.129559, 0.129558, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5yi6v"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_i431l"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_0npn6"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qps0a"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wsx0s"]
+bg_color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_3rr1h"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_pegyb"]
+bg_color = Color(1, 1, 1, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_60y0j"]
+bg_color = Color(0.129412, 0.129412, 0.129412, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_icc0t"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lcjiy"]
+bg_color = Color(0, 0, 0, 1)
+border_width_left = 8
+border_width_top = 8
+border_width_right = 8
+border_width_bottom = 8
+border_color = Color(1, 1, 1, 1)
+
+[sub_resource type="Animation" id="Animation_dnb8m"]
+resource_name = "Alfonso_attacks"
+length = 1.50001
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Alfonso:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("22_uwl2g"), ExtResource("23_5kmqj"), ExtResource("24_lfmjp"), ExtResource("25_uefs0"), ExtResource("26_6ke21"), ExtResource("27_2sop1")]
+}
+
+[sub_resource type="Animation" id="Animation_wsx0s"]
+resource_name = "Alfonso_hurt"
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Alfonso:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("37_xtuie"), ExtResource("38_agd6b"), ExtResource("39_fahm1"), ExtResource("40_t6r5o"), ExtResource("41_ukj8r"), ExtResource("42_6re1f"), ExtResource("43_qps0a"), ExtResource("44_pegyb"), ExtResource("45_4p2ti"), ExtResource("46_5yi6v")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(2, -5), Vector2(4, 6), Vector2(-5, 3), Vector2(-2, -2), Vector2(5, 4), Vector2(-5, -5), Vector2(2, -2)]
+}
+
+[sub_resource type="Animation" id="Animation_jw6nk"]
+resource_name = "Alfonso_idle"
+length = 1.80001
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Alfonso:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1, 1.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("28_uefs0"), ExtResource("29_6ke21"), ExtResource("30_2sop1"), ExtResource("31_dnb8m")]
+}
+
+[sub_resource type="Animation" id="Animation_5kmqj"]
+resource_name = "Enemy_Hurt"
+length = 1.10001
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyContainer/Control/Enemy:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("12_aacmo"), ExtResource("13_rggsl"), ExtResource("14_fljlq"), ExtResource("15_s5g7e"), ExtResource("16_j128n"), ExtResource("17_nt5qs"), ExtResource("18_v7t3w"), ExtResource("19_in21c"), ExtResource("20_uwl2g")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.100004, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [Vector2(2, 3), Vector2(-3, -3), Vector2(3, 4), Vector2(4, 1), Vector2(1, 4), Vector2(-4, -2)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("EnemyContainer/Control/Enemy:size")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(372, 391)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("EnemyContainer/Control/Enemy:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-5, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_bx4lf"]
+resource_name = "Enemy_Idle"
+length = 0.60001
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyContainer/Control/Enemy:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("6_b1i6x"), ExtResource("7_sl0w2"), ExtResource("8_elvfr"), ExtResource("9_4s0ev"), ExtResource("10_pihy1"), ExtResource("11_slotg")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EnemyContainer/Control/Enemy:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(372, 391)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("EnemyContainer/Control/Enemy:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-5, 4)]
+}
+
+[sub_resource type="Animation" id="Animation_hn8dw"]
+resource_name = "Enemy_attacks"
+length = 1.00001
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyContainer/Control/Enemy:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4, 0.5),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 1,
+"values": [ExtResource("31_2n6th"), ExtResource("32_bqoqy"), ExtResource("33_ptuo3"), ExtResource("34_mrqp6"), ExtResource("35_goa8d"), ExtResource("36_vpc78")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("EnemyContainer/Control/Enemy:size")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(465.815, 390.03)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("EnemyContainer/Control/Enemy:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-50.485, 5.21)]
+}
+
+[sub_resource type="Animation" id="Animation_ix8ov"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("EnemyContainer/Control/Enemy:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("2_7sfm4")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Camera2D:offset")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Alfonso:texture")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("28_uefs0")]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("EnemyContainer/Control/Enemy:size")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(358, 358)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("EnemyContainer/Control/Enemy:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(4, 4)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_22sa7"]
+_data = {
+&"Alfonso_attacks": SubResource("Animation_dnb8m"),
+&"Alfonso_hurt": SubResource("Animation_wsx0s"),
+&"Alfonso_idle": SubResource("Animation_jw6nk"),
+&"Enemy_Hurt": SubResource("Animation_5kmqj"),
+&"Enemy_Idle": SubResource("Animation_bx4lf"),
+&"Enemy_attacks": SubResource("Animation_hn8dw"),
+&"RESET": SubResource("Animation_ix8ov")
+}
+
+[node name="Battle" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -459.0
+offset_top = -197.0
+offset_right = 397.0
+offset_bottom = 454.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_i431l")
+enemy = ExtResource("2_6t8i5")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 99.0
+offset_top = 80.0
+offset_right = 2099.0
+offset_bottom = 1384.0
+texture = ExtResource("3_xtuie")
+
+[node name="EnemyContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_left = 1229.0
+offset_top = 326.0
+offset_right = 1587.0
+offset_bottom = 695.0
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="Control" type="Control" parent="EnemyContainer"]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="EnemyContainer/Control"]
+layout_mode = 2
+offset_top = -39.225
+offset_right = 358.0
+offset_bottom = 0.775002
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_6t8i5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dw4jg")
+value = 50.0
+allow_greater = true
+show_percentage = false
+
+[node name="Label" type="Label" parent="EnemyContainer/Control/ProgressBar"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("2_i431l")
+theme_override_font_sizes/font_size = 24
+text = "HP: 100 / 200"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Enemy" type="TextureRect" parent="EnemyContainer/Control"]
+layout_mode = 2
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 362.0
+offset_bottom = 362.0
+texture = ExtResource("2_7sfm4")
+expand_mode = 5
+
+[node name="PlayerPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 458.0
+offset_top = -581.0
+offset_right = -396.0
+offset_bottom = -454.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7sfm4")
+
+[node name="PlayerData" type="HBoxContainer" parent="PlayerPanel"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.307
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="Control" type="Control" parent="PlayerPanel/PlayerData"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="PlayerPanel/PlayerData/Control"]
+layout_mode = 2
+offset_left = -248.0
+offset_top = 36.0
+offset_right = 95.0
+offset_bottom = 115.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = -6
+theme_override_constants/shadow_offset_y = 5
+theme_override_fonts/font = ExtResource("2_i431l")
+theme_override_font_sizes/font_size = 45
+text = "Alfonso"
+horizontal_alignment = 1
+
+[node name="ProgressBar" type="ProgressBar" parent="PlayerPanel/PlayerData/Control"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.204
+anchor_top = 0.489
+anchor_right = 0.924
+anchor_bottom = 0.534
+offset_top = -52.23
+offset_bottom = 47.77
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/background = SubResource("StyleBoxFlat_6t8i5")
+theme_override_styles/fill = SubResource("StyleBoxFlat_dw4jg")
+value = 50.0
+show_percentage = false
+
+[node name="Label" type="Label" parent="PlayerPanel/PlayerData/Control/ProgressBar"]
+layout_mode = 1
+anchors_preset = -1
+anchor_top = 0.193
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -77.726
+offset_top = -16.276
+offset_right = 51.274
+offset_bottom = 26.374
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 7
+theme_override_fonts/font = ExtResource("2_i431l")
+theme_override_font_sizes/font_size = 47
+text = "HP: 50 / 100"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ActionsPanel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 459.0
+offset_top = -648.0
+offset_right = -396.0
+offset_bottom = -578.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxFlat_7sfm4")
+
+[node name="Actions" type="HBoxContainer" parent="ActionsPanel"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 6.0
+offset_top = 6.0
+offset_right = -7.0
+offset_bottom = -4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 0
+alignment = 1
+
+[node name="Attack" type="Button" parent="ActionsPanel/Actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.988235, 0, 0.396078, 1)
+theme_override_fonts/font = ExtResource("2_i431l")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/focus = SubResource("StyleBoxFlat_6re1f")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_4p2ti")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_5yi6v")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i431l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0npn6")
+text = "Attack"
+
+[node name="Defend" type="Button" parent="ActionsPanel/Actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.988235, 0, 0.396078, 1)
+theme_override_fonts/font = ExtResource("2_i431l")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/focus = SubResource("StyleBoxFlat_qps0a")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_wsx0s")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_3rr1h")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i431l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0npn6")
+text = "Defend"
+
+[node name="Run" type="Button" parent="ActionsPanel/Actions"]
+layout_mode = 2
+size_flags_horizontal = 3
+focus_mode = 1
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0.988235, 0, 0.396078, 1)
+theme_override_fonts/font = ExtResource("2_i431l")
+theme_override_font_sizes/font_size = 34
+theme_override_styles/focus = SubResource("StyleBoxFlat_pegyb")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_60y0j")
+theme_override_styles/hover_pressed = SubResource("StyleBoxFlat_icc0t")
+theme_override_styles/hover = SubResource("StyleBoxFlat_i431l")
+theme_override_styles/normal = SubResource("StyleBoxFlat_0npn6")
+text = "Run"
+
+[node name="TextBox" type="Panel" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 459.0
+offset_top = 722.0
+offset_right = 1736.0
+offset_bottom = 917.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_lcjiy")
+
+[node name="RichTextLabel" type="RichTextLabel" parent="TextBox"]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.035
+anchor_top = 0.068
+anchor_right = 0.975
+anchor_bottom = 0.87
+offset_left = -16.418
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/normal_font = ExtResource("2_i431l")
+theme_override_font_sizes/normal_font_size = 32
+bbcode_enabled = true
+text = "* Hola Mundo"
+visible_characters_behavior = 3
+
+[node name="Label2" type="Label" parent="TextBox"]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -81.0
+offset_top = -70.0
+offset_right = -25.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_fonts/font = ExtResource("2_i431l")
+theme_override_font_sizes/font_size = 40
+text = ">"
+horizontal_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_22sa7")
+}
+
+[node name="EnemyAnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_22sa7")
+}
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(459, 197)
+anchor_mode = 0
+
+[node name="Alfonso" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 625.0
+offset_top = 367.0
+offset_right = 967.0
+offset_bottom = 714.0
+texture = ExtResource("28_uefs0")
+
+[node name="ButtonPressed" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("47_agd6b")
+
+[node name="DontPress" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("48_fahm1")
+volume_db = -4.95
+
+[node name="Hurt" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("49_t6r5o")
+volume_db = -4.95
+
+[node name="MainMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("50_ukj8r")
+autoplay = true
+
+[node name="TextSound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("51_6re1f")
+volume_db = 4.685
+autoplay = true
+
+[connection signal="pressed" from="ActionsPanel/Actions/Attack" to="." method="_on_attack_pressed"]
+[connection signal="pressed" from="ActionsPanel/Actions/Run" to="." method="_on_run_pressed"]
